@@ -18,7 +18,7 @@ LOGS = logging.getLogger("DRAGO")
 bot = dragoiq
 
 StartTime = time.time()
-JEPVERSION = "3.1.3"
+DRVERSION = "3.1.3"
 
 
 if Config.UPSTREAM_REPO == "DRAGOiq":

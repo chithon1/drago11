@@ -35,7 +35,7 @@ try:
     LOGS.info("يتم تفعيل وضع الانلاين")
     dragoiq.loop.run_until_complete(mybot())
     LOGS.info("تم تفعيل وضع الانلاين بنجاح")
-except Exception as jep:
+except Exception as drago:
     LOGS.error(f"- {drago}")
     sys.exit()    
 

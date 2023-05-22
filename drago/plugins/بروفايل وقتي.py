@@ -1,7 +1,7 @@
 # اذا تخمط اذكر الحقوق رجـاءا  - 
 # كتابة وتعديل وترتيب  ~ @lsbax
-# For ~ @drago
-#تعديل Reda / رضا
+# For ~ @drago_dr
+#تعديل Ahmed / احمد
 #من تعرف تخمط اذكر حقوق لتسوي نفسك مطور
 import webcolors
 import asyncio
@@ -157,7 +157,7 @@ async def _(event):
     if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
         return await edit_delete(event, "**الاسـم الـوقتي شغـال بالأصـل**")
     addgvar("autoname", True)
-    await edit_delete(event, "**تم تفـعيل اسـم الـوقتي بنجـاح ✓**")
+    await edit_delete(event, "**تم تفـعيل اسـم الـوقتي بنجـاح**")
     await autoname_loop()
 
 
@@ -165,9 +165,9 @@ async def _(event):
 async def _(event):
     "To update your bio along with time"
     if gvarstatus("autobio") is not None and gvarstatus("autobio") == "true":
-        return await edit_delete(event, "**الـبايو الـوقتي شغـال بالأصـل 🧸♥**")
+        return await edit_delete(event, "**الـبايو الـوقتي شغـال بالأصـل**")
     addgvar("autobio", True)
-    await edit_delete(event, "**تم تفـعيل البـايو الـوقتي بنجـاح ✓**")
+    await edit_delete(event, "**تم تفـعيل البـايو الـوقتي بنجـاح**")
     await autobio_loop()
 
 
@@ -212,7 +212,7 @@ async def _(event):  # sourcery no-metrics
     if input_str not in END_CMDS:
         await edit_delete(
             event,
-            f"عـذرا يجـب استـخدام الامـر بشـكل صحـيح 🧸♥",
+            f"عـذرا يجـب استـخدام الامـر بشـكل صحـيح",
             parse_mode=_format.parse_pre,
         )
 

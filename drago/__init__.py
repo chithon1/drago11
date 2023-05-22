@@ -22,7 +22,7 @@ JEPVERSION = "3.1.3"
 
 
 if Config.UPSTREAM_REPO == "DRAGOiq":
-    UPSTREAM_REPO_URL = "https://github.com/qithoniq/Drago"
+    UPSTREAM_REPO_URL = "https://github.com/qithoniq/drago"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 

@@ -21,7 +21,7 @@ StartTime = time.time()
 DRVERSION = "3.1.3"
 
 
-if Config.UPSTREAM_REPO == "DRAGOiq":
+if Config.UPSTREAM_REPO == "dragoiq":
     UPSTREAM_REPO_URL = "https://github.com/qithoniq/drago"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO

@@ -2,12 +2,12 @@ import sys
 import os
 from typing import Any, Dict, List, Union
 from glob import glob
-from jepthon import *
-from jepthon.helpers.functions.functions import translate
+from drago import *
+from drago.helpers.functions.functions import translate
 try:
     from yaml import safe_load
 except ModuleNotFoundError:
-    from jepthon.helpers.functions.functions import safe_load
+    from drago.helpers.functions.functions import safe_load
 
 os.getenv("LANGUAGE", "ar")
 
@@ -15,7 +15,7 @@ languages = {}
 
 
 
-for file in glob("ALJoker/strings/*yml"):
+for file in glob("Dragodex/strings/*yml"):
     if file.endswith(".yml"):
         code = file.split("/")[-1].split("\\")[-1][:-4]
         try:

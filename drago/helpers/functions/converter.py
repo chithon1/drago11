@@ -2,11 +2,11 @@ import os
 
 from PIL import Image
 
-from jepthon.core.logger import logging
-from jepthon.core.managers import edit_or_reply
-from jepthon.helpers.functions.vidtools import take_screen_shot
-from jepthon.helpers.tools import fileinfo, media_type, meme_type
-from jepthon.helpers.utils.utils import runcmd
+from drago.core.logger import logging
+from drago.core.managers import edit_or_reply
+from drago.helpers.functions.vidtools import take_screen_shot
+from drago.lpers.tools import fileinfo, media_type, meme_type
+from drago.helpers.utils.utils import runcmd
 
 LOGS = logging.getLogger(__name__)
 

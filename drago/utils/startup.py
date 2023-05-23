@@ -129,7 +129,7 @@ async def startupmessage():
 async def mybot():
     DATH_USER = dragoiq.me.first_name
     The_noon = dragoiq.uid
-    jep_ment = f"[{DATH_USER}](tg://user?id={The_noon})"
+    drago_ment = f"[{DATH_USER}](tg://user?id={The_noon})"
     f"ـ drago_ment}"
         f"› هذا هو بوت خاص بـ {drago_ment} يمكنك التواصل معه هنا"
     starkbot = await dragoiq.tgbot.get_me()

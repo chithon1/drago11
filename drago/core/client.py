@@ -256,7 +256,7 @@ class DragoClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطأ دراكو**\n\n"
-                        link = "[هنا](https://t.me/SupportDrago)"
+                        link = "[هنا](https://t.me/DragoSupport)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطأ فقط التاريخ والوقت\n\n"

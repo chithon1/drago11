@@ -84,7 +84,7 @@ async def unban_user_from_bot(user, reason, reply_to=None):
     banned_msg = f"**تم الغاء حظرك من البوت يمكنك التواصل مع مالك البوت.**"
     if reason is not None:
         banned_msg += f"\n**السبب:** __{reason}__"
-    await jepiq.tgbot.send_message(user.id, banned_msg)
+    await dragoiq.tgbot.send_message(user.id, banned_msg)
     info = f"**#المستخدمين_غير_المحظورين**\
             \n\n👤 {_format.mentionuser(get_display_name(user) , user.id)}\
             \n**الأسم الاول:** {user.first_name}\

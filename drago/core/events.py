@@ -92,9 +92,9 @@ async def safe_check_text(msg):  # sourcery no-metrics
     if not msg:
         return False
     msg = str(msg)
-    from .session import jepthon
+    from .session import drago
 
-    phone = str((await catub.get_entity(jepthon.uid)).phone)
+    phone = str((await catub.get_entity(drago.uid)).phone)
     return bool(
         (
             (Config.STRING_SESSION in msg)

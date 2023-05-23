@@ -20,12 +20,12 @@ def media_type(message):
 
 async def post_to_telegraph(page_title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "joker"
+    auth_name = "drago"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=page_title,
         author=auth_name,
-        author_url="https://t.me/jepthon",
+        author_url="https://t.me/Drago_dr",
         text=html_format_content,
     )
     return post_page["url"]

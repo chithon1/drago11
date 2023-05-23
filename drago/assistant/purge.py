@@ -1,13 +1,13 @@
 #(c) Copyright JepThon 2020-21
-#جميع الحقوق محفودظة لسورس جـيبثون 
-#By ~  @RR9R7
+#جميع الحقوق محفودظة لسورس دراكو
+#By ~  @lsbax_dev
 import asyncio
 
 from telethon import events
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from jepthon import bot
+from drago import bot
 from .. import *
 
 OWNER_ID = bot.uid

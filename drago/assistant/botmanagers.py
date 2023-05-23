@@ -3,7 +3,7 @@ from math import floor
 
 from telethon.utils import get_display_name
 
-from jepthon import jepiq
+from drago import dragoiq
 
 from ..Config import Config
 from ..core.logger import logging
@@ -65,14 +65,14 @@ async def ban_user_from_bot(user, reason, reply_to=None):
     banned_msg = (
         f"**تم حظرك من ااستخدام هذا البوت\nالسبب** : {reason}"
     )
-    await jepiq.tgbot.send_message(user.id, banned_msg)
+    await drago.tgbot.send_message(user.id, banned_msg)
     info = f"**#المستخدمين_المحظورين**\
             \n\n👤 {_format.mentionuser(get_display_name(user) , user.id)}\
             \n**الاسم الاول:** {user.first_name}\
             \n**الايدي:** `{user.id}`\
             \n**السبب:** `{reason}`"
     if BOTLOG:
-        await jepiq.send_message(BOTLOG_CHATID, info)
+        await drago.send_message(BOTLOG_CHATID, info)
     return info
 
 
@@ -90,5 +90,5 @@ async def unban_user_from_bot(user, reason, reply_to=None):
             \n**الأسم الاول:** {user.first_name}\
             \n**الايدي:** `{user.id}`"
     if BOTLOG:
-        await jepiq.send_message(BOTLOG_CHATID, info)
+        await drago.send_message(BOTLOG_CHATID, info)
     return info

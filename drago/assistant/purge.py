@@ -1,4 +1,4 @@
-#(c) Copyright JepThon 2020-21
+#(c) Copyright Drago 2020-21
 #جميع الحقوق محفودظة لسورس دراكو
 #By ~  @lsbax_dev
 import asyncio

@@ -29,7 +29,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/qithoniq/Drago.git"
+        "UPSTREAM_REPO", "https://github.com/qithoniq/drago.git"
     )
 
     # BASIC and MAIN CONFIG VARS
@@ -91,7 +91,7 @@ class Config(object):
         or 0
     )
 
-    # Custom vars for jepthon
+    # Custom vars for dragon
     # set this will channel id of your custom plugins
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
     # set this value with your required name for telegraph plugin
@@ -118,7 +118,7 @@ class Config(object):
     # this should be a valid "regex" pattern
     COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r".")
     SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"،")
-    # set this with required folder path to act as download folder
+    # set this with r deequired folder path to act as download folder
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "downloads")
     # set this with required folder path to act as temparary folder
     TEMP_DIR = os.environ.get("TEMP_DIR", "./temp/")

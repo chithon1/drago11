@@ -60,20 +60,20 @@ def main_menu():
     buttons = [
         (Button.inline("التعليمات", data="check"),),
         (
-            Button.inline(f"👮‍♂️ • اوامر الادمن • ({len(GRP_INFO['admin'])})", data="admin_menu"),
-            Button.inline(f"🤖 • اوامر البوت • ({len(GRP_INFO['bot'])})", data="bot_menu"),
+            Button.inline(f"اوامر الادمن ({len(GRP_INFO['admin'])})", data="admin_menu"),
+            Button.inline(f"اوامر البوت ({len(GRP_INFO['bot'])})", data="bot_menu"),
         ),
         (
-            Button.inline(f"🎨 • اوامر التسلية • ({len(GRP_INFO['fun'])})", data="fun_menu"),
-            Button.inline(f"🎈 • اوامر الصيغ والبحث • ({len(GRP_INFO['misc'])})", data="misc_menu"),
+            Button.inline(f"اوامر التسلية ({len(GRP_INFO['fun'])})", data="fun_menu"),
+            Button.inline(f"اوامر الصيغ والبحث ({len(GRP_INFO['misc'])})", data="misc_menu"),
         ),
         (
-            Button.inline(f"🧰 • الادوات • ({len(GRP_INFO['tools'])})", data="tools_menu"),
-            Button.inline(f"🗂 • الملفات • ({len(GRP_INFO['utils'])})", data="utils_menu"),
+            Button.inline(f"الادوات ({len(GRP_INFO['tools'])})", data="tools_menu"),
+            Button.inline(f"الملفات ({len(GRP_INFO['utils'])})", data="utils_menu"),
         ),
         (
-            Button.inline(f"🧸 • اوامر متفرعه • ({len(GRP_INFO['extra'])})", data="extra_menu"),
-            Button.inline("🔒 • اغلاق القائمة •", data="close"),
+            Button.inline(f"اوامر متفرعه ({len(GRP_INFO['extra'])})", data="extra_menu"),
+            Button.inline("اغلاق القائمة", data="close"),
         ),
     ]
 
@@ -228,7 +228,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("الحـالة ⚒️", data="stats"),
-                    Button.url(" drago UsᴇʀBoᴛ", "https://t.me/drago"),
+                    Button.url(" drago UsᴇʀBoᴛ", "https://t.me/Drago_dr"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")

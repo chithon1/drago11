@@ -100,7 +100,7 @@ class Config(object):
     THUMB_IMAGE = os.environ.get(
         "THUMB_IMAGE", "https://telegra.ph/file/ca95524e4734b0d5461b5.jpg"
     )
-    # specify NO_LOAD with plugin names for not loading in jepthon
+    # specify NO_LOAD with plugin names for not loading in drago
     NO_LOAD = [x for x in os.environ.get("NO_LOAD", "").split()]
     # for custom pic for .digitalpfp
     DIGITAL_PIC = os.environ.get("DIGITAL_PIC", None)

@@ -1,3 +1,4 @@
-cd /app
-echo "----- Now deployed web booting your repo ------ " 
-gunicorn app:app & python3 -m drago
+#!/bin/bash
+
+echo "---جار تشغيل سورس دراكو --"
+python3 -m drago

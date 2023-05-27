@@ -38,7 +38,7 @@ class Config(object):
 
     # تعديلي
     PING_PIC = os.environ.get("PING_PIC")
-    TIME_JEP = os.environ.get("TIME_JEP", None)
+    TIME_DRA = os.environ.get("TIME_DRA", None)
     JP_FN = os.environ.get("JP_FN", None)
     ID_EM = os.environ.get("ID_EM", None)
     ID_ET = os.environ.get("ID_ET", None)
@@ -59,7 +59,7 @@ class Config(object):
     PHOTO_ET = os.environ.get("PHOTO_ET", None)    
     LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")
      DRAGO_START = os.environ.get(" DRAGO_START", None)
-    PMPERMIT_TEXT_Jepthon = os.environ.get("PMPERMIT_TEXT_Jepthon", None)
+    PMPERMIT_TEXT_Drago = os.environ.get("PMPERMIT_TEXT_Drago", None)
     UB_BLACK_LIST_CHAT = {
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
     }

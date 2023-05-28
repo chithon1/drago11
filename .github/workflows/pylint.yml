@@ -31,6 +31,6 @@ jobs:
           commit_message: 'أعداد تلقائي'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: dragon
-          commit_user_email: dragon@users.noreply.github.com
-          commit_author: dragon <qithoniq@users.noreply.github.com>
+          commit_user_name: drago
+          commit_user_email: drago@users.noreply.github.com
+          commit_author: drago <qithoniq@users.noreply.github.com>

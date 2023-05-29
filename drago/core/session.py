@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 from telethon.errors import AccessTokenExpiredError, AccessTokenInvalidError
 from ..Config import Config
 from .client import DragoClient
-LOGS = logging.getLogger(" ")
+LOGS = logging.getLogger("DRAGO")
 
 __version__ = "2.10.6"
 

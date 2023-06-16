@@ -1,9 +1,3 @@
-# @drago - < https://t.me/Drago_dr >
-# Copyright (C) 2021 - drago-AR
-# All rights reserved.
-#
-# Please read the GNU Affero General Public License in;
-# ===============================================================
 import asyncio
 import os
 import re

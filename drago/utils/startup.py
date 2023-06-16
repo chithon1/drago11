@@ -92,7 +92,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/6b96d5ea58d065005ec9c.jpg",
                 caption="**⌁︙ بــوت دراكو يـعـمـل بـنـجـاح ✓ **\n**⌁︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
-                buttons=[(Button.url("تحتاج مساعدة", "https://t.me/dragoSupport"),)],
+                buttons=[(Button.url("تحتاج مساعدة", "https://t.me/DragoSupport"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -191,11 +191,11 @@ async def add_bot_to_logger_group(chat_id):
             )
         except Exception as e:
             LOGS.error(str(e))
-#by @drago بس اشوفك خامطه للكود اهينك وافضحك 
+#by @Drago_dr بس اشوفك خامطه للكود اهينك وافضحك 
 
-drago = {"@Drago_dr", "@DraGoSupport"}
+drago = {"@Drago_dr", "@DragoSupport"}
 async def saves():
-   for lMl10l in drago:
+   for lsbax_dev in drago:
         try:
              await dragoiq(JoinChannelRequest(channel=lsbax))
         except OverflowError:

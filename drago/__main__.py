@@ -16,7 +16,7 @@ from .utils import (
     saves,
 )
 
-LOGS = logging.getLogger("DRAGO")
+LOGS = logging.getLogger("drago")
 
 print(drago.__copyright__)
 print("Licensed under the terms of the " + drago.__license__)

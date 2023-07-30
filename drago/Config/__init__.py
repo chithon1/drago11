@@ -1,1 +1,1 @@
-from .roza_config import Config
+from .drago_config import Config

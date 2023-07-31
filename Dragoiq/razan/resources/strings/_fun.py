@@ -1,6 +1,6 @@
 #not complete 
-#by ~ @lsbax_dev
-#for ~ @dragoiq
+#by ~ @FFlXlX
+#for ~ @Drago_dr
 roz = [
     "100% تحبك وتخاف عليك",
     "100% يحبج ويخاف عليج", 

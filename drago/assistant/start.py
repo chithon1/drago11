@@ -32,8 +32,8 @@ async def start(event):
             vent,
             message=f"اهـلا يا مالكـي انـه انـا {bot_id}, مسـاعدك ! \nمـاذا تريـد ان تفعـل اليـوم ?",
             buttons=[
-                                         " ‹اوامر البـوت ›", data="gibcmd")],
-                                     [Button.url("‹ المـطـور ›", "https://t.me/lsbax_dev"), Button.inline(
+                                         " ‹ اوامر البـوت ›", data="gibcmd")],
+                                     [Button.url("‹ المـطـور ›", "https://t.me/FFlXlX"), Button.inline(
                                       "‹ اوامر الزغـرفة ›", data="rozzag")],
 
                                  ])

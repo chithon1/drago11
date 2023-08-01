@@ -313,7 +313,7 @@ async def upstream(event):
 @dragoiq.ar_cmd(
     pattern="تحديث التنصيب$",
 )
-async def Hussein(event):
+async def Ahmed(event):
     if ENV:
         if HEROKU_API_KEY is None or HEROKU_APP_NAME is None:
             return await edit_or_reply(

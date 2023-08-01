@@ -23,7 +23,7 @@ from . import mention
 
 plugin_category = "utils"
 
-#كتـابة وتعـديل:  @lsbax_dev
+#كتـابة وتعـديل:  @FFlXlX
 ALIVE_ET = Config.ALIVE_ET or "فحص"
 @dragoiq.on(admin_cmd(pattern=f"{ALIVE_ET}(?:\s|$)([\s\S]*)"))
     
@@ -50,6 +50,7 @@ async def amireallyalive(event):
         pyver=python_version(),
         dbhealth=check_sgnirts,
         ping=ms,
+        Tare5=installation_time,
     )
     if RR7_IMG:
         RR7 = [x for x in RR7_IMG.split()]
@@ -76,5 +77,6 @@ temp = """{ALIVE_TEXT}
 **‌‎{EMOJI}‌‎𝙿𝚈𝚃𝙷𝙾𝙽 𖠄 {pyver}** ٫
 **‌‎{EMOJI}‌‎𝙳𝚁𝙰𝙶𝙾 𖠄 {telever}** ٫
 **‌‎{EMOJI}‌‎𝚄𝙿𝚃𝙸𝙼𝙴 𖠄 {uptime}** ٫
-‌‎**{EMOJI}‌‎‌‎𝙿𝙸𝙽𝙶 𖠄 {ping}** ٫
+‌‎**{EMOJI}‌‎‌‎𝙿𝙸𝙽𝙶 𖠄 {ping}** ٫‌
+‎**{EMOJI}‌‎‌‎𝚂𝙴𝚃𝚄𝙿 𝙳𝙰𝚃𝙴 𖠄 `{Tare5}`** ٫
 **𖠄 𝗱𝗿𝗮𝗴𝗼 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 𖠄**"""

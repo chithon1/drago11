@@ -432,7 +432,7 @@ async def reda(event):
             await update(event, repo, ups_rem, ac_br)
             
 @dragoiq.on(events.NewMessage(incoming=True))
-async def Hussein(event):
+async def Ahmed(event):
     if event.reply_to and event.sender_id in progs:
         reply_msg = await event.get_reply_message()
         owner_id = reply_msg.from_id.user_id

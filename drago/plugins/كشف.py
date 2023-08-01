@@ -69,6 +69,7 @@ async def fetch_info(replied_user, event):
     is_bot = replied_user.bot
     restricted = replied_user.restricted
     verified = replied_user.verified
+    FFlXlX = (await event.client.get_entity(user_id)).premium
     photo = await event.client.download_profile_photo(     user_id,     Config.TMP_DOWNLOAD_DIRECTORY + str(user_id) + ".jpg",    download_big=True  )
     first_name = (      first_name.replace("\u2060", "")
         if first_name
@@ -87,6 +88,8 @@ async def fetch_info(replied_user, event):
     caption += f"<b> {drago_EM}╎الحساب ⇠ </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
     caption += f"\n<b> {drago_EM}╎البايـو    ⇠ </b> {user_bio} \n"
+    if FFlXlX == True or user_id in FFlXlX: # code by t.me/FFlXlX
+    caption += f"<b> {drago_EM}الحسـاب ⇠  بـريميـوم╎</b>\n"
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
 

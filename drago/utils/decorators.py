@@ -10,7 +10,7 @@ from ..Config import Config
 from ..core.data import _sudousers_list, blacklist_chats_list
 from ..core.events import MessageEdited, NewMessage
 from ..core.logger import logging
-from ..core.session import dragoiq
+from ..core.session import Dragoiq
 from ..helpers.utils.format import paste_message
 from ..helpers.utils.utils import runcmd
 from ..sql_helper.globals import gvarstatus
@@ -26,11 +26,13 @@ def admin_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
     file_test = file_test.stem.replace(".py", "")
     allow_sudo = args.get("allow_sudo", False)
     if pattern is not None:
+        
         if pattern.startswith(r"\#"):
             args["pattern"] = re.compile(pattern)
         elif pattern.startswith(r"^"):
             args["pattern"] = re.compile(pattern)
             cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
+            
             try:
                 CMD_LIST[file_test].append(cmd)
             except BaseException:
@@ -51,6 +53,7 @@ def admin_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
                 )
             try:
                 CMD_LIST[file_test].append(cmd)
+                
             except BaseException:
                 CMD_LIST.update({file_test: [cmd]})
     args["outgoing"] = True
@@ -60,6 +63,7 @@ def admin_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
         del args["allow_sudo"]
     elif "incoming" in args and not args["incoming"]:
         args["outgoing"] = True
+    
     if gvarstatus("blacklist_chats") is not None:
         args["blacklist_chats"] = True
         args["chats"] = blacklist_chats_list()
@@ -157,7 +161,7 @@ def errors_handler(func):
             result = output[0] + output[1]
             ftext += result
             pastelink = await paste_message(ftext)
-            text = "**تقرير خطأ دراكو**\n\n"
+            text = "**تقرير خطا دراكـو**\n\n"
             link = "[هنا](https://t.me/DragoSupport)"
             text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
             text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
@@ -221,8 +225,8 @@ def register(**args):
 
     def decorator(func):
         if not disable_edited:
-            dragoiq.add_event_handler(func, MessageEdited(**args))
-        dragoiq.add_event_handler(func, NewMessage(**args))
+            l313l.add_event_handler(func, MessageEdited(**args))
+        l313l.add_event_handler(func, NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except Exception:
@@ -278,8 +282,8 @@ def command(**args):
 
     def decorator(func):
         if allow_edited_updates:
-            dragoiq.add_event_handler(func, MessageEdited(**args))
-        dragoiq.add_event_handler(func, NewMessage(**args))
+            l313l.add_event_handler(func, MessageEdited(**args))
+        
         try:
             LOAD_PLUG[file_test].append(func)
         except BaseException:

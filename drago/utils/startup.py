@@ -90,7 +90,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await dragoiq.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/798b3dbc2f44160afc46e.jpg",
+                "https://telegra.ph/file/c2bab46ce813090a48c5e.jpg",
                 caption="**⌁︙ بــوت دراكو يـعـمـل بـنـجـاح ✓ **\n**⌁︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
                 buttons=[(Button.url("هل تحتاج مساعدة", "https://t.me/DragoSupport"),)],
             )

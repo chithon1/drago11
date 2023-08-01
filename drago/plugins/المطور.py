@@ -46,7 +46,7 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f"مطورين دراكو\n"
         cat_caption += f"━━━━━━━━━━━━━\n"
-        cat_caption += f"- المطور  : @lsbax_dev\n"
+        cat_caption += f"- المطور  : @FFlXlX\n"
        cat_caption += f"- قناة السورس  : @Drago_dr\n"
         cat_caption += f"━━━━━━━━━━━━━\n"
         await event.client.send_file(
@@ -67,10 +67,10 @@ async def reda(event):
        owner_id = reply_msg.from_id.user_id
        if owner_id == dragoiq.uid:
            if event.message.message == "حظر من السورس":
-               await event.reply("**حاظر مطوري ، لقد تم حظره من استخدام السورس**")
+               await event.reply("**حاضر مطوري ، لقد تم حظره من استخدام السورس**")
                addgvar("blockedfrom", "yes")
            elif event.message.message == "الغاء الحظر من السورس":
-               await event.reply("**حاظر مطوري، لقد الغيت الحظر**")
+               await event.reply("**حاضر مطوري ، لقد الغيت الحظر**")
                delgvar("blockedfrom")
                
 

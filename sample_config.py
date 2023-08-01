@@ -57,8 +57,8 @@ class Config(object):
     NAME_ET = os.environ.get("NAME_ET", None)
     BIO_ET = os.environ.get("BIO_ET", None)
     PHOTO_ET = os.environ.get("PHOTO_ET", None)    
-    LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")
-     DRAGO_START = os.environ.get("DRAGO_START", None)
+    LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")   
+    DRAGO_START = os.environ.get("DRAGO_START", None)
     PMPERMIT_TEXT_Drago = os.environ.get("PMPERMIT_TEXT_Drago", None)
     UB_BLACK_LIST_CHAT = {
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()

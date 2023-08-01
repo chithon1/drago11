@@ -26,16 +26,7 @@ from ..sql_helper.global_collection import (
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
-from flask import Flask
 
- app = Flask(__name__)
-
- @app.route('/')
- def hello_world():
-     return 'Hello World!'
-
- if __name__ == '__main__':
-     app.run()
 LOGS = logging.getLogger("drago")
 
 
@@ -91,7 +82,7 @@ async def startupmessage():
             Config.CATUBLOGO = await dragoiq.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/c2bab46ce813090a48c5e.jpg",
-                caption="**⌁︙ بــوت دراكو يـعـمـل بـنـجـاح ✓ **\n**⌁︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
+                caption="**⌁︙ بــوت دراكو يـعـمـل بـنـجـاح**\n**⌁︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
                 buttons=[(Button.url("هل تحتاج مساعدة", "https://t.me/DragoSupport"),)],
             )
     except Exception as e:

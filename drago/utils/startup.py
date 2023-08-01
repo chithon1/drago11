@@ -284,9 +284,9 @@ async def verifyLoggerGroup():
             )
     else:
         descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @Drago_dr"
-        photobt = await dragoiq.upload_file(file="dragoiq/razan/resources/start/drago.JPEG")
+        photobt = await dragoiq.upload_file(file="Dragoiq/razan/resources/start/DraGo2.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة أشعارات دراكو ", dragoiq, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة الاشعارات", dragoiq, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("⌁︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -313,7 +313,7 @@ async def verifyLoggerGroup():
             )
     else:
         descript = "⌁︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @Drago_dr"
-        photobt = await dragoiq.upload_file(file="dragoiq/razan/resources/start/drago2.JPEG")
+        photobt = await dragoiq.upload_file(file="Dragoiq/razan/resources/start/DraGo.jpg")
         _, groupid = await create_supergroup(
             "مجموعة التخزين", dragoiq, Config.TG_BOT_USERNAME, descript, photobt
         )

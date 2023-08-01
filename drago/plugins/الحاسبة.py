@@ -131,7 +131,7 @@ async def _(e):  # sourcery no-metrics
         await e.answer(str(x))
 
 
-# 𝗧𝗲𝗹𝗲𝗚𝗿𝗮𝗠 : @drago  ~ @lMl10l
+# 𝗧𝗲𝗹𝗲𝗚𝗿𝗮𝗠 : @drago_dr  ~ @lsbax_dev
 @dragoiq.tgbot.on(CallbackQuery(data=re.compile(b"recalc")))
 @check_owner
 async def _(e):

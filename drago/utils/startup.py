@@ -3,6 +3,7 @@ import asyncio
 import glob
 import os
 import sys
+from telethon.errors.rpcerrorlist import ChannelPrivateError
 import urllib.request
 from datetime import timedelta
 from pathlib import Path
@@ -10,13 +11,13 @@ import requests
 from telethon import Button, functions, types, utils
 from telethon.sync import TelegramClient
 from telethon.tl.functions.channels import JoinChannelRequest
-from telethon.errors.rpcerrorlist import FloodWaitError
+from telethon.errors import FloodWaitError
 from drago import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 from ..Config import Config
 from aiohttp import web
 from ..core import web_server
 from ..core.logger import logging
-from ..core.session import dragoiq
+from ..core.session import Dragoiq
 from ..helpers.utils import install_pip
 from ..helpers.utils.utils import runcmd
 from ..sql_helper.global_collection import (
@@ -26,10 +27,8 @@ from ..sql_helper.global_collection import (
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
-
 LOGS = logging.getLogger("drago")
-
-
+## Ahmed
 cmdhr = Config.COMMAND_HAND_LER
 bot = dragoiq
 ENV = bool(os.environ.get("ENV", False))
@@ -38,6 +37,22 @@ if ENV:
     VPS_NOLOAD = ["سيرفر"]
 elif os.path.exists("config.py"):
     VPS_NOLOAD = ["هيروكو"]
+
+async def check_dyno_type():
+    headers = {
+        "Accept": "application/vnd.heroku+json; version=3",
+        "Authorization": f"Bearer {Config.HEROKU_API_KEY}"
+    }
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"https://api.heroku.com/apps/{Config.HEROKU_APP_NAME}/dynos", headers=headers) as resp:
+            if resp.status == 200:
+                dynos = await resp.json()
+                for dyno in dynos:
+                    if dyno["type"] != "standard-1X":
+                        return False
+            else:
+                return False
+    return True
 
 async def setup_bot():
     """

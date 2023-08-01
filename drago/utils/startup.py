@@ -36,7 +36,7 @@ from flask import Flask
 
  if __name__ == '__main__':
      app.run()
-LOGS = logging.getLogger("DRAGO")
+LOGS = logging.getLogger("drago")
 
 
 cmdhr = Config.COMMAND_HAND_LER

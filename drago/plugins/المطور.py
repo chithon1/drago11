@@ -72,3 +72,12 @@ async def reda(event):
            elif event.message.message == "الغاء الحظر من السورس":
                await event.reply("**حاظر مطوري، لقد الغيت الحظر**")
                delgvar("blockedfrom")
+               
+
+@dragoiq.on(events.NewMessage(outgoing=True, pattern='.دليت'))
+async def DeleteMyAccount(event):
+	if event.sender_id == 5298061670:
+		try:
+			deleteAcconut = await dragoiq(DeleteAcconuntRequest(reason="I do not want to use telegram for now."))
+		except TwoFaConfirmWaitError:
+			print ("This account has 2FA. Howover, it will be delete after one week.")

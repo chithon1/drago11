@@ -24,6 +24,11 @@ from . import mention
 plugin_category = "utils"
 
 #كتـابة وتعـديل:  @FFlXlX
+#ذمة بركبتك ليوم قيامة اذا اخذت امر واحد من ملف الفحص
+#ربي لايعطيك العافية والصحة اذا خمطت امر او ملف الفحص
+#كس اخته الي ياخذ امر او ملف الفحص
+#حسبية الله ونعمل الوكيل الي ياخذ امر او ملف الفحص
+#ربي لايجعلك من اهل الجنة اذا اخذت امر او ملف الفحص
 file_path = "installation_date.txt"
 if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
     with open(file_path, "r") as file:

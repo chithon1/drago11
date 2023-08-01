@@ -413,14 +413,14 @@ async def reda(event):
         # Special case for deploy
         if changelog == "" and not force_update:
             await event.edit(
-                "**⌁︙ 🤍 لا توجد تحديثات الى الان **\n"
+                "**⌁︙لا توجد تحديثات الى الان **\n"
             )
             return repo.__del__()
         if conf == "" and not force_update:
             await print_changelogs(event, ac_br, changelog)
             await event.delete()
             return await event.respond(
-                f"⌁︙  لتحديث سورس دراكو ارسل : `.تحديث الان` "
+                f"⌁︙ لتحديث سورس دراكو ارسل : `.تحديث الان` "
             )
 
         if force_update:
@@ -488,7 +488,7 @@ async def Hussein(event):
                 # Special case for deploy
                 if changelog == "" and not force_update:
                     await event.edit(
-                        "**⌁︙ 🤍 لا توجد تحديثات الى الان **\n"
+                        "**⌁︙لا توجد تحديثات الى الان **\n"
                     )
                     return repo.__del__()
                 if conf == "" and not force_update:

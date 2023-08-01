@@ -202,7 +202,7 @@ async def _(event):  # sourcery no-metrics
             await event.client(
                 functions.account.UpdateProfileRequest(about=DEFAULTUSERBIO)
             )
-            return await edit_delete(event, "**  تم ايقاف البايو الوقـتي بنـجاح ✓**")
+            return await edit_delete(event, "**تم ايقاف البايو الوقـتي بنـجاح ✓**")
         return await edit_delete(event, "**لم يتم تفعيل البايو الوقتي 🧸♥**")
     END_CMDS = [
         "الصورة الوقتية",

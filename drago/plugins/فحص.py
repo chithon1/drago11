@@ -24,6 +24,15 @@ from . import mention
 plugin_category = "utils"
 
 #كتـابة وتعـديل:  @FFlXlX
+file_path = "installation_date.txt"
+if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
+    with open(file_path, "r") as file:
+        installation_time = file.read().strip()
+else:
+    installation_time = datetime.now().strftime("%Y-%m-%d")
+    with open(file_path, "w") as file:
+        file.write(installation_time)
+
 ALIVE_ET = Config.ALIVE_ET or "فحص"
 @dragoiq.on(admin_cmd(pattern=f"{ALIVE_ET}(?:\s|$)([\s\S]*)"))
     

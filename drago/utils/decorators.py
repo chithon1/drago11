@@ -282,7 +282,7 @@ def command(**args):
 
     def decorator(func):
         if allow_edited_updates:
-            l313l.add_event_handler(func, MessageEdited(**args))
+            dragoiq.add_event_handler(func, MessageEdited(**args))
         
         try:
             LOAD_PLUG[file_test].append(func)

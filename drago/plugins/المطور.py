@@ -11,7 +11,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from jepthon import StartTime, dragoiq, JEPVERSION
+from drago import StartTime, dragoiq, DRAVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
@@ -47,7 +47,7 @@ async def amireallyalive(event):
         cat_caption = f"مطورين دراكو\n"
         cat_caption += f"━━━━━━━━━━━━━\n"
         cat_caption += f"- المطور  : @FFlXlX\n"
-       cat_caption += f"- قناة السورس  : @Drago_dr\n"
+        cat_caption += f"- قناة السورس  : @Drago_dr\n"
         cat_caption += f"━━━━━━━━━━━━━\n"
         await event.client.send_file(
             event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id

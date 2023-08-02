@@ -17,7 +17,7 @@ from ..Config import Config
 from aiohttp import web
 from ..core import web_server
 from ..core.logger import logging
-from ..core.session import Dragoiq
+from ..core.session import dragoiq
 from ..helpers.utils import install_pip
 from ..helpers.utils.utils import runcmd
 from ..sql_helper.global_collection import (
@@ -28,7 +28,7 @@ from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
 LOGS = logging.getLogger("drago")
-## Ahmed
+##Ahmed
 cmdhr = Config.COMMAND_HAND_LER
 bot = dragoiq
 ENV = bool(os.environ.get("ENV", False))

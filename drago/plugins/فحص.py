@@ -12,7 +12,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from drago import StartTime, dragoiq, DRVERSION
+from drago import StartTime, dragoiq, DRAGOVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
@@ -29,6 +29,7 @@ plugin_category = "utils"
 #كس اخته الي ياخذ امر او ملف الفحص
 #حسبية الله ونعمل الوكيل الي ياخذ امر او ملف الفحص
 #ربي لايجعلك من اهل الجنة اذا اخذت امر او ملف الفحص
+
 file_path = "installation_date.txt"
 if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
     with open(file_path, "r") as file:

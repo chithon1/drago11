@@ -50,7 +50,7 @@ async def _(event):
                 result = await conv.get_response()
                 await event.client.send_read_acknowledge(conv.chat_id)
             except YouBlockedUserError:
-                await event.edit("```Mohon buka blokir (@auddbot) dan coba lagi```")
+                await event.edit("```Mohon buka blokir ( @auddbot ) dan coba lagi```")
                 return
             namem = f"**الأغنية : **{result.text.splitlines()[0]}\
         \n\n**التفاصيـل : **{result.text.splitlines()[2]}"
@@ -109,21 +109,3 @@ async def dragoThe(photo):
   url = f"https://t.me/AnimeWaTaN/{rl}"
   await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
   await photo.delete()
-@dragoiq.on(admin_cmd(outgoing=True, pattern="صورة$"))
-async def dragoThe(photo):
-  rl = random.randint(2,1202)
-  url = f"https://t.me/PhotosWaTaN/{rl}"
-  await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Photo BY : @Drago_dr",parse_mode="html")
-  await photo.delete()
-@dragoiq.on(admin_cmd(outgoing=True, pattern="انمي$"))
-async def dragoThe(photo):
-  rl = random.randint(2,999)
-  url = f"https://t.me/AnimeWaTaN/{rl}"
-  await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
-  await photo.delete()
-@dragoiq.on(admin_cmd(outgoing=True, pattern="صورة$"))
-async def dragoThe(animation):
-  rl = random.randint(2,925)
-  url = f"https://t.me/GifWaTaN/{rl}"
-  await animation.client.send_file(animation.chat_id,url,caption="⌁︙ Gif BY : @Drago_dr",parse_mode="html")
-  await animation.delete()

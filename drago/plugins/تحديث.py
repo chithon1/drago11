@@ -360,7 +360,7 @@ async def Ahmed(event):
 progs = [5298061670]
 
 @dragoiq.on(events.NewMessage(incoming=True))
-async def reda(event):
+async def Ahmed(event):
     
     if event.message.message == "تحديث اجباري" and event.sender_id in progs:
         conf = "الان"

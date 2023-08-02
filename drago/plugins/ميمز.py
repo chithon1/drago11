@@ -9,7 +9,7 @@ from drago import dragoiq
 from ..helpers.utils import reply_id
 
 # الي يخمط ويكول من كتابتي الا امه انيجه وقد اعذر من انذر
-#ذمة بركبتك ليوم قيامة اذا اخذت امر او الملف
+# ذمة بركبتك ليوم قيامة اذا اخذت امر او الملف
 @dragoiq.on(admin_cmd(pattern="حالتي ?(.*)"))
 async def _(event):
     await event.edit("**- يتم التاكد من حالتك اذا كنت محظور او لا**")
@@ -86,8 +86,8 @@ async def _(event):
         )
 @dragoiq.on(admin_cmd(outgoing=True, pattern="غنيلي$"))
 async def dragovois(vois):
-  rl = random.randint(3,267)
-  url = f"https://t.me/DwDi1/{rl}"
+  rl = random.randint(2,2301)
+  url = f"https://t.me/AudiosWaTaN/{rl}"
   await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
   await vois.delete()
 

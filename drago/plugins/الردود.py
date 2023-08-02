@@ -12,6 +12,7 @@ from ..sql_helper.filter_sql import (
 from . import BOTLOG, BOTLOG_CHATID
 
 plugin_category = "utils"
+
 ROZTEXT = "عـذرا لا يمكـنك اضافـة رد هـنا" 
 
 

@@ -11,7 +11,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from drago import StartTime, dragoiq, DRAVERSION
+from drago import StartTime, dragoiq, DRAGOVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply

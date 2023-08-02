@@ -7,7 +7,7 @@ from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from telethon.tl.types import ChatBannedRights
 
 
-from jepthon import jepiq
+from drago import dragoiq
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.utils import _format

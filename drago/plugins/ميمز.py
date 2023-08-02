@@ -9,6 +9,7 @@ from drago import dragoiq
 from ..helpers.utils import reply_id
 
 # الي يخمط ويكول من كتابتي الا امه انيجه وقد اعذر من انذر
+#ذمة بركبتك ليوم قيامة اذا اخذت امر او الملف
 @dragoiq.on(admin_cmd(pattern="حالتي ?(.*)"))
 async def _(event):
     await event.edit("**- يتم التاكد من حالتك اذا كنت محظور او لا**")
@@ -87,24 +88,42 @@ async def _(event):
 async def dragovois(vois):
   rl = random.randint(3,267)
   url = f"https://t.me/DwDi1/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr 🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
   await vois.delete()
 
 @dragoiq.on(admin_cmd(outgoing=True, pattern="شعر$"))
 async def dragovois(vois):
-  rl = random.randint(2,101)
+  rl = random.randint(2,622)
   url = f"https://t.me/L1BBBL/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr 🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
   await vois.delete()
 @dragoiq.on(admin_cmd(outgoing=True, pattern="قران$"))
 async def dragovois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/KTKKVK{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr 🤲🏻☪️",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
   await vois.delete()
-@dragoiq.on(admin_cmd(outgoing=True, pattern="ثيم$"))
-async def dragoThe(theme):
-  rl = random.randint(2,510)
-  url = f"https://t.me/GSSSD/{rl}"
-  await theme.client.send_file(theme.chat_id,url,caption="⌁︙ THEME BY : @Drago_dr 🎊",parse_mode="html")
-  await theme.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="انمي$"))
+async def dragoThe(photo):
+  rl = random.randint(2,999)
+  url = f"https://t.me/AnimeWaTaN/{rl}"
+  await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
+  await photo.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="صورة$"))
+async def dragoThe(photo):
+  rl = random.randint(2,1202)
+  url = f"https://t.me/PhotosWaTaN/{rl}"
+  await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Photo BY : @Drago_dr",parse_mode="html")
+  await photo.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="انمي$"))
+async def dragoThe(photo):
+  rl = random.randint(2,999)
+  url = f"https://t.me/AnimeWaTaN/{rl}"
+  await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
+  await photo.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="صورة$"))
+async def dragoThe(animation):
+  rl = random.randint(2,925)
+  url = f"https://t.me/GifWaTaN/{rl}"
+  await animation.client.send_file(animation.chat_id,url,caption="⌁︙ Gif BY : @Drago_dr",parse_mode="html")
+  await animation.delete()

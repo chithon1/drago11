@@ -84,26 +84,26 @@ async def _(event):
             f"الايميل الخاص هو `{response.message.message}`\n[ اضغط هنا لرؤية من رسائل الايميل الواردة]({dragoiqmail})"
         )
 @dragoiq.on(admin_cmd(outgoing=True, pattern="غنيلي$"))
-async def jepvois(vois):
+async def dragovois(vois):
   rl = random.randint(3,267)
   url = f"https://t.me/DwDi1/{rl}"
   await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @drago 🎀",parse_mode="html")
   await vois.delete()
 
 @dragoiq.on(admin_cmd(outgoing=True, pattern="شعر$"))
-async def jepvois(vois):
+async def dragovois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/L1BBBL/{rl}"
   await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @drago 🎀",parse_mode="html")
   await vois.delete()
 @dragoiq.on(admin_cmd(outgoing=True, pattern="قران$"))
-async def jepvois(vois):
+async def dragovois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/KTKKVK{rl}"
   await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @drago 🤲🏻☪️",parse_mode="html")
   await vois.delete()
 @dragoiq.on(admin_cmd(outgoing=True, pattern="ثيم$"))
-async def jepThe(theme):
+async def dragoThe(theme):
   rl = random.randint(2,510)
   url = f"https://t.me/GSSSD/{rl}"
   await theme.client.send_file(theme.chat_id,url,caption="⌁︙ THEME BY : @drago 🎊",parse_mode="html")

@@ -25,4 +25,3 @@ except AttributeError as e:
         "DB_URI is not configured. Features depending on the database might have issues."
     )
     LOGS.error(str(e))
-

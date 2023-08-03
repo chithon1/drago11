@@ -21,7 +21,7 @@ from ..sql_helper.global_collection import (
 )
 from ..sql_helper.globals import delgvar
 
-plugin_category = "tools"
+plugin_category = "الادوات"
 cmdhd = Config.COMMAND_HAND_LER
 ENV = bool(os.environ.get("ENV", False))
 
@@ -36,7 +36,7 @@ heroku_api = "https://api.heroku.com"
 UPSTREAM_REPO_BRANCH = Config.UPSTREAM_REPO_BRANCH
 
 REPO_REMOTE_NAME = "temponame"
-IFFUCI_ACTIVE_BRANCH_NAME = "drago"
+IFFUCI_ACTIVE_BRANCH_NAME = "master"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/drago"
 RESTARTING_APP = "re-starting heroku application"

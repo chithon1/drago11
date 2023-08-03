@@ -34,7 +34,7 @@ async def _(event):
     "To list all plugins in drago"
     cmd = "ls drago/plugins"
     o = (await _catutils.runcmd(cmd))[0]
-    OUTPUT = f"**[الجوكر](tg://need_update_for_some_feature/) الـمـلفـات:**\n{o}"
+    OUTPUT = f"**[دراكو](tg://need_update_for_some_feature/) الـمـلفـات:**\n{o}"
     await edit_or_reply(event, OUTPUT)
 
 

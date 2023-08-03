@@ -109,3 +109,207 @@ async def dragoThe(photo):
   url = f"https://t.me/AnimeWaTaN/{rl}"
   await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
   await photo.delete()
+        Ti = await reply_id(vois)
+    if jpvois27:
+        await vois.client.send_file(vois.chat_id, jpvois27, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="ماادري يعني$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois28:
+        await vois.client.send_file(vois.chat_id, jpvois28, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="منو انت$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois29:
+        await vois.client.send_file(vois.chat_id, jpvois29, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="مو صوجكم$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois30:
+        await vois.client.send_file(vois.chat_id, jpvois30, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="خوش تسولف$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois31:
+        await vois.client.send_file(vois.chat_id, jpvois31, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="يع$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois32:
+        await vois.client.send_file(vois.chat_id, jpvois32, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="يعني مااعرف$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois35:
+        await vois.client.send_file(vois.chat_id, jpvois35, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="يامرحبا$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois36:
+        await vois.client.send_file(vois.chat_id, jpvois36, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="منو انتة$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois37:
+        await vois.client.send_file(vois.chat_id, jpvois37, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="ماتستحي$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois38:
+        await vois.client.send_file(vois.chat_id, jpvois38, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="كعدت الديوث$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois39:
+        await vois.client.send_file(vois.chat_id, jpvois39, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="عيب$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois40:
+        await vois.client.send_file(vois.chat_id, jpvois40, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="عنعانم$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois41:
+        await vois.client.send_file(vois.chat_id, jpvois41, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="طبك مرض$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois42:
+        await vois.client.send_file(vois.chat_id, jpvois42, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="سييي$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois43:
+        await vois.client.send_file(vois.chat_id, jpvois43, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="سبيدر مان$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois44:
+        await vois.client.send_file(vois.chat_id, jpvois44, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="خاف حرام$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois45:
+        await vois.client.send_file(vois.chat_id, jpvois45, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="تحيه لاختك$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois46:
+        await vois.client.send_file(vois.chat_id, jpvois46, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="امشي كحبة$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois47:
+        await vois.client.send_file(vois.chat_id, jpvois47, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="امداك$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois48:
+        await vois.client.send_file(vois.chat_id, jpvois48, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="الحس$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois49:
+        await vois.client.send_file(vois.chat_id, jpvois49, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="افتهمنا$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois50:
+        await vois.client.send_file(vois.chat_id, jpvois32, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="اطلع برا$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois51:
+        await vois.client.send_file(vois.chat_id, jpvois51, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="اخت التنيج$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois52:
+        await vois.client.send_file(vois.chat_id, jpvois52, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="اوني تشان$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois53:
+        await vois.client.send_file(vois.chat_id, jpvois53, reply_to=Ti)
+        await vois.delete()
+@dragoiq.on(admin_cmd(outgoing=True, pattern="اوني تشان2$"))
+async def event(vois):
+    if vois.fwd_from:
+        return
+    Ti = await reply_id(vois)
+    if jpvois54:
+        await vois.client.send_file(vois.chat_id, jpvois54, reply_to=Ti)
+        await vois.delete()        

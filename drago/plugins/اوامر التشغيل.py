@@ -50,7 +50,7 @@ async def _(event):
     await asyncio.sleep(2)
     await event.edit("100%\n████████████████████████")
     await asyncio.sleep(2)
-    await event.edit("**᯽︙ تم اعادة تشغيل بنجاح ✓ \nانتظر 2-5 دقائق**")
+    await event.edit("**⌁︙ تم اعادة تشغيل بنجاح ✓ \nانتظر 2-5 دقائق**")
     await asyncio.sleep(2)
     try:
         ulist = get_collectionlist_items()
@@ -148,7 +148,7 @@ async def Ahmed(event):
         owner_id = reply_msg.from_id.user_id
         if owner_id == drago.uid:
             if event.message.message == "اطفاء":
-                    await event.reply("**⌁︙ تدلل أحمد**")
+                    await event.reply("**⌁︙ تدلل مطوري**")
                     if HEROKU_APP is not None:
                         HEROKU_APP.process_formation()["worker"].scale(0)
                     else:

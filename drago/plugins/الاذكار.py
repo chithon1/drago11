@@ -6,7 +6,7 @@ from drago.utils import admin_cmd
 
 import asyncio
 from drago import dragoiq
-from drago.razan._islam import *
+from Dragoiq.razan._islam import *
 from ..core.managers import edit_or_reply
 
 plugin_category = "extra" 

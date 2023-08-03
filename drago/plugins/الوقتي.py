@@ -1,24 +1,23 @@
 from ..sql_helper.group import auto_g, del_auto_g, get_auto_g
 import webcolors
 import asyncio
-import base64
 import os
 import shutil
 import time
 from datetime import datetime
 from telethon import events
-from ALJoker import get_string
+from Dragodex import get_string
 from telethon.errors import ChatAdminRequiredError
 from PIL import Image, ImageDraw, ImageFont
 from pySmartDL import SmartDL
 from telethon.errors import FloodWaitError, ChannelInvalidError
 from telethon.tl import functions
 from telethon import types
-from HuRe import BOTLOG_CHATID
+from drago import BOTLOG_CHATID
 from ..Config import Config
 from ..helpers.utils import _format
 from ..sql_helper.globals import addgvar, delgvar, gvarstatus
-from . import AUTONAME, DEFAULT_GROUP, DEFAULT_BIO, edit_delete, l313l, logging
+from . import AUTONAME, DEFAULT_GROUP, DEFAULT_BIO, edit_delete, dragoiq, logging
 from colour import Color
 
 plugin_category = "tools"

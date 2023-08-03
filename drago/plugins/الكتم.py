@@ -19,7 +19,7 @@ plugin_category = "admin"
 
 #=================== الكـــــــــــــــتم  ===================  #
 
-@dragoiq .on(admin_cmd(pattern=f"كتم(?:\s|$)([\s\S]*)"))
+@dragoiq.on(admin_cmd(pattern=f"كتم(?:\s|$)([\s\S]*)"))
 async def mutejep(event):
     if event.is_private:
         replied_user = await event.client.get_entity(event.chat_id)
@@ -108,7 +108,7 @@ async def mutejep(event):
 
 #=================== الغـــــــــــــاء الكـــــــــــــــتم  ===================  #
 
-@dragoiq .on(admin_cmd(pattern=f"الغاء كتم(?:\s|$)([\s\S]*)"))
+@dragoiq.on(admin_cmd(pattern=f"الغاء كتم(?:\s|$)([\s\S]*)"))
 async def unmutejep(event):
     if event.is_private:
         replied_user = await event.client.get_entity(event.chat_id)
@@ -165,7 +165,7 @@ async def unmutejep(event):
 
 # ===================================== # 
 
-@dragoiq .ar_cmd(incoming=True)
+@dragoiq.ar_cmd(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, "كتم_مؤقت"):
         await event.delete()

@@ -7,7 +7,7 @@ from .core.logger import logging
 from .core.session import dragoiq
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
-__version__ = "1.0.0"
+__version__ = "3.1.3"
 __license__ = "كـتابة وتـعديل فريـق دراكو"
 __author__ = "دراكو <https://t.me/Drago_dr>"
 __copyright__ = "DRAGO TEAM (C) 2020 - 2021  " + __author__

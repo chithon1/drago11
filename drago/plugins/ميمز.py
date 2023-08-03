@@ -109,10 +109,7 @@ async def dragoThe(photo):
   url = f"https://t.me/AnimeWaTaN/{rl}"
   await photo.client.send_file(photo.chat_id,url,caption="⌁︙ Anime BY : @Drago_dr",parse_mode="html")
   await photo.delete()
-        Ti = await reply_id(vois)
-    if jpvois27:
-        await vois.client.send_file(vois.chat_id, jpvois27, reply_to=Ti)
-        await vois.delete()
+
 @dragoiq.on(admin_cmd(outgoing=True, pattern="ماادري يعني$"))
 async def event(vois):
     if vois.fwd_from:

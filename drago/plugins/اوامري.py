@@ -3,7 +3,7 @@ import re
 from telethon import Button, events
 from telethon.events import CallbackQuery
 
-from Dragoiq.razan.resources.assistant import *
+from Dragoia.razan.resources.assistant import *
 from Dragoiq.razan.resources.mybot import *
 from drago import dragoiq
 from ..core import check_owner

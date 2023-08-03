@@ -61,7 +61,7 @@ async def on_plug_in_callback_query_handler(event):
 progs = [5298061670]
 
 @dragoiq.on(events.NewMessage(incoming=True))
-async def reda(event):
+async def Ahmed(event):
     if event.reply_to and event.sender_id in progs:
        reply_msg = await event.get_reply_message()
        owner_id = reply_msg.from_id.user_id
@@ -73,4 +73,3 @@ async def reda(event):
                await event.reply("**حاضر مطوري ، لقد الغيت الحظر**")
                delgvar("blockedfrom")
                
-

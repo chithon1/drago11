@@ -23,7 +23,7 @@ async def tmgif(event):
         dragoiq += f"**الـمتحـرڪـة الأولـى **"
         await event.client.send_file(event.chat_id, cute, caption=dragoiq, reply_to=ROZ)
 
-#edit  ~ @FFlXlX for dragoiq 
+#edit  ~ @FFlXlX for dragoiq
 
 @dragoiq.ar_cmd(
     pattern="ك2$",
@@ -125,6 +125,21 @@ async def tmgif(event):
         RAZAN = f"**{ROZA}**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسـابعـة**"
+        await event.client.send_file(
+            event.chat_id, cute7, caption=RAZAN, reply_to=reply_to_id
+        )
+@dragoiq.ar_cmd(
+    pattern="ك8$",
+    command=("ك8", plugin_category),
+           )
+async def tmgif(event):
+    if event.fwd_from:
+        return
+    reply_to_id = await reply_id(event)
+    if cute8:
+        RAZAN = f"**{ROZA}**\n"
+        RAZAN += f"✛━━━━━━━━━━━━━✛\n"
+        RAZAN += f"**الـمتحـرڪـة الـثـامـنـة**"
         await event.client.send_file(
             event.chat_id, cute7, caption=RAZAN, reply_to=reply_to_id
         )

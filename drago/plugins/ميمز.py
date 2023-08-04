@@ -7,6 +7,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from drago import dragoiq
 from ..helpers.utils import reply_id
+from ..sql_helper.locks_sql import *
 
 # الي يخمط ويكول من كتابتي الا امه انيجه وقد اعذر من انذر
 # ذمة بركبتك ليوم قيامة اذا اخذت امر او الملف

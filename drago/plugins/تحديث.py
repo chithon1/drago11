@@ -1,14 +1,13 @@
 import asyncio
 import os
-import contextlib
 import sys
 from asyncio.exceptions import CancelledError
-import requests
+
 import heroku3
 import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-from telethon import events 
+
 from drago import HEROKU_APP, UPSTREAM_REPO_URL, dragoiq
 
 from ..Config import Config
@@ -21,13 +20,12 @@ from ..sql_helper.global_collection import (
 )
 from ..sql_helper.globals import delgvar
 
-plugin_category = "الادوات"
+plugin_category = "tools"
 cmdhd = Config.COMMAND_HAND_LER
-ENV = bool(os.environ.get("ENV", False))
 
 LOGS = logging.getLogger(__name__)
 # -- ثـوابت -- #
-# ذمة بركبتك ليوم قيامة اذا خمطت كود
+
 HEROKU_APP_NAME = Config.HEROKU_APP_NAME or None
 HEROKU_API_KEY = Config.HEROKU_API_KEY or None
 Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -356,7 +354,6 @@ async def Ahmed(event):
     await deploy(event, repo, ups_rem, ac_br, txt)
 
 
-# ذمة بركبتك ليوم قيامة اذا خمطت كود
 progs = [5298061670]
 
 @dragoiq.on(events.NewMessage(incoming=True))

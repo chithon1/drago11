@@ -12,7 +12,9 @@ from drago.core.logger import logging
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
-from ..helpers import
+from ..helpers import get_user_from_event, reply_id
+from . import spamwatch
+
 drago_EM = Config.ID_EM or " •❃ "
 ID_EDIT = gvarstatus("ID_ET") or "ايدي"
 

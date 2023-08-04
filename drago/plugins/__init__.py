@@ -14,7 +14,7 @@ from .. import *
 from ..Config import Config
 from ..core.logger import logging
 from ..core.managers import edit_delete, edit_or_reply
-from ..core.session import drago
+from ..core.session import dragoiq
 from ..helpers import *
 from ..helpers.utils import _cattools, _catutils, _format, install_pip, reply_id
 from Dragoiq.razan.resources.Gif import *

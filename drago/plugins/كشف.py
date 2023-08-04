@@ -101,7 +101,7 @@ else:
     caption += f"\n<b> {drago_EM}╎البايـو    ⇠ </b> {user_bio} \n"
     if FFlXlX == True or user_id in FFlXlX: # code by t.me/FFlXlX
     caption += f"<b> {drago_EM}╎الحسـاب ⇠  بـريميـوم</b>\n"
-    caption += f"\m<b> {drago_EM}╎انشاء حسابك ⇠ {Tare5}</b>\n"
+    caption += f"\m<b> {drago_EM}╎تم ارسال الرسالة ⇠ {Tare5}</b>\n"
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
 

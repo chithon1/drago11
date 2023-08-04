@@ -23,5 +23,6 @@ cute6 = "https://telegra.ph/file/f67f3c36091543134bfe3.mp4"
 cute7 = "https://telegra.ph/file/490a014e0e4974bfe94d5.mp4"
 cute8 = "https://telegra.ph/file/ed1d5b4fa2e86e6d7f96f.mp4"
 cute9 = "https://telegra.ph/file/a66b32e8f831ed74ca950.mp4"
+cite9 = "https://telegra.ph/file/fac547185856a2078d293.mp4"
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━#

@@ -69,8 +69,7 @@ async def fetch_info(replied_user, event):
     is_bot = replied_user.bot
     restricted = replied_user.restricted
     verified = replied_user.verified
-    FFlXlX = (await event.client.get_entity(user_id)).premium
-    Tare5=installation_time,
+    drago_time=installation_time,
     
     file_path = "installation_date.txt"
 if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
@@ -89,7 +88,7 @@ else:
     username = "@{}".format(username) if username else ("لايـوجـد معـرف")
     user_bio = "لاتـوجـد نبـذة" if not user_bio else user_bio
     rotbat = "مبرمج السورس" if user_id == 5298061670 else ("عضو")
-    rotbat = "مالك الحساب " if user_id == (await event.client.get_me()).id and user_id !=  5298061670 else rotbat
+    rotbat = "مالك الحساب" if user_id == (await event.client.get_me()).id and user_id !=  5298061670 else rotbat
     caption = "✛━━━━━━━━━━━━━✛\n"
     caption += f"<b> {drago_EM}╎الاسـم    ⇠ </b> {full_name}\n"
     caption += f"<b> {drago_EM}╎المعـرف  ⇠ </b> {username}\n"
@@ -99,9 +98,7 @@ else:
     caption += f"<b> {drago_EM}╎الحساب ⇠ </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
     caption += f"\n<b> {drago_EM}╎البايـو    ⇠ </b> {user_bio} \n"
-    if FFlXlX == True or user_id in FFlXlX: # code by t.me/FFlXlX
-    caption += f"<b> {drago_EM}╎الحسـاب ⇠  بـريميـوم</b>\n"
-    caption += f"\m<b> {drago_EM}╎تم ارسال الرسالة ⇠ {Tare5}</b>\n"
+    caption += f"\m<b> {drago_EM}╎تم ارسال الرسالة ⇠ {drago_time}</b>\n"
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
 

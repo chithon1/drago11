@@ -326,7 +326,7 @@ async def Ahmed(event):
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}update now`",
         )
     event = await edit_or_reply(event, "**⌁︙ جارِ تحديث ريبو التنصيب لسورس دراكو **")
-    off_repo = "https://github.com/qithoniq/dragon1"
+    off_repo = "https://github.com/chithon1/dragon1"
     os.chdir("/app")
     try:
         txt = (

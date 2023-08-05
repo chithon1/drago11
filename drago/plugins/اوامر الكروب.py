@@ -779,6 +779,7 @@ async def disable_emoji_blocker(event):
     Ya_Ahmed = False
     active_drago.remove(event.chat_id)
     await event.edit("**⌁︙ تم تعطيل امر منع الايموجي المُميز بنجاح**")
+   
     @dragoiq.on(admin_cmd(outgoing=True, pattern="تخوني$"))
 async def event(vois):
     if vois.fwd_from:
@@ -787,7 +788,6 @@ async def event(vois):
     if dragovois1:
         await vois.client.send_file(vois.chat_id, dragovois1, reply_to=Ti)
         await vois.delete()
-
 @dragoiq.on(admin_cmd(outgoing=True, pattern="مستمرة الكلاوات$"))
 async def event(vois):
     if vois.fwd_from:

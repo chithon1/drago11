@@ -22,7 +22,7 @@ DRAGOVERSION = "3.1.3"
 
 
 if Config.UPSTREAM_REPO == "qithoniq":
-    UPSTREAM_REPO_URL = "https://github.com/qithoniq/drago11"
+    UPSTREAM_REPO_URL = "https://github.com/chithon1/drago11"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 

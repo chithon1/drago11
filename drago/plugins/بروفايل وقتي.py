@@ -1,7 +1,6 @@
 # اذا تخمط اذكر الحقوق رجـاءا  - 
 # كتابة وتعديل وترتيب  ~ @FFlXlX
 # For ~ @Drago_dr
-#تعديل Reda / رضا
 import webcolors
 import asyncio
 import base64

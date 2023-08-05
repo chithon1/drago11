@@ -29,7 +29,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 LOGS = logging.getLogger("alDRAGO")
 logging.getLogger('telethon').setLevel(logging.WARNING)
-##Reda hands here
+##Ahmed hands here
 cmdhr = Config.COMMAND_HAND_LER
 bot = dragoiq
 ENV = bool(os.environ.get("ENV", False))

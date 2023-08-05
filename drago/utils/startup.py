@@ -101,7 +101,6 @@ async def startupmessage():
                 "https://telegra.ph/file/c2bab46ce813090a48c5e.jpg",
                 caption="**‏⌁︙ بــوت دراكـو يـعـمـل بـنـجـاح ✓ \n⌁︙ أرسل `.الاوامر`لرؤية اوامر السورس**",
                 buttons=[(Button.url("سورس دراكو", "https://t.me/Drago_dr"),)],
-                buttons=[(Button.url("مساعدة دراكو", "https://t.me/DragoSupport"),)],
             )
     except Exception as e:
         LOGS.error(e)

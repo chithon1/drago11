@@ -15,7 +15,7 @@ from ..core.managers import edit_or_reply
 from ..helpers import get_user_from_event, reply_id
 from . import spamwatch
 
-drago_EM = Config.ID_EM or " •❃ "
+drago_EM = Config.ID_EM or " ❃ "
 ID_EDIT = gvarstatus("ID_ET") or "ايدي"
 
 plugin_category = "utils"
@@ -99,7 +99,7 @@ async def fetch_info(replied_user, event):
     caption += f"<b> {drago_EM}╎الحساب ⇠ </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
     caption += f"\n<b> {drago_EM}╎البايـو    ⇠ </b> {user_bio} \n"
-    caption += f"\m<b> {drago_EM}╎تم ارسال الرسالة ⇠ {drago_time}</b>\n"
+    caption += f"<b> {drago_EM}╎تم ارسال الرسالة ⇠ {drago_time} \n"
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
 

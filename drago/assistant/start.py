@@ -63,7 +63,7 @@ async def help(event):
             event.chat_id,
             message="**هاذا رابط التنصيب اذا تحتاج مساعدة اذهب الى كروب مساعدة**.",
             buttons=[
-                [Button.url("رابط التنصيب", "https://dashboard.heroku.com/new?template=https://github.com/qithoniq/dragon/tree/drago11")],
+                [Button.url("رابط التنصيب", "https://dashboard.heroku.com/new?template=https://github.com/chithon1/dragon1/tree/drago11")],
                 [Button.url("كروب المساعدة", "https://t.me/Drago_drSupport")],
             ],
         )

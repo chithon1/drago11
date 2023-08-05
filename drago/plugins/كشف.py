@@ -19,6 +19,16 @@ drago_EM = Config.ID_EM or " •❃ "
 ID_EDIT = gvarstatus("ID_ET") or "ايدي"
 
 plugin_category = "utils"
+
+file_path = "installation_date.txt"
+if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
+    with open(file_path, "r") as file:
+        installation_time = file.read().strip()
+else:
+    installation_time = datetime.now().strftime("%Y-%m-%d")
+    with open(file_path, "w") as file:
+        file.write(installation_time)
+        
 LOGS = logging.getLogger(__name__)
 async def get_user_from_event(event):
     if event.reply_to_msg_id:
@@ -70,16 +80,6 @@ async def fetch_info(replied_user, event):
     restricted = replied_user.restricted
     verified = replied_user.verified
     drago_time=installation_time,
-    
-    file_path = "installation_date.txt"
-if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
-    with open(file_path, "r") as file:
-        installation_time = file.read().strip()
-else:
-    installation_time = datetime.now().strftime("%Y-%m-%d")
-    with open(file_path, "w") as file:
-        file.write(installation_time)
-        
     photo = await event.client.download_profile_photo(     user_id,     Config.TMP_DOWNLOAD_DIRECTORY + str(user_id) + ".jpg",    download_big=True  )
     first_name = (      first_name.replace("\u2060", "")
         if first_name

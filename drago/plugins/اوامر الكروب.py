@@ -780,7 +780,7 @@ async def disable_emoji_blocker(event):
     active_drago.remove(event.chat_id)
     await event.edit("**⌁︙ تم تعطيل امر منع الايموجي المُميز بنجاح**")
    
-    @dragoiq.on(admin_cmd(outgoing=True, pattern="تخوني$"))
+@dragoiq.on(admin_cmd(outgoing=True, pattern="تخوني$"))
 async def event(vois):
     if vois.fwd_from:
         return

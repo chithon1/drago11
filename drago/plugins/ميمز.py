@@ -98,12 +98,6 @@ async def dragovois(vois):
   url = f"https://t.me/L1BBBL/{rl}"
   await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
   await vois.delete()
-@dragoiq.on(admin_cmd(outgoing=True, pattern="قران$"))
-async def dragovois(vois):
-  rl = random.randint(2,101)
-   url = f"https://t.me/KTKKVK/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⌁︙ BY : @Drago_dr",parse_mode="html")
-  await vois.delete()
 @dragoiq.on(admin_cmd(outgoing=True, pattern="انمي$"))
 async def dragoThe(photo):
   rl = random.randint(2,999)

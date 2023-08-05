@@ -32,9 +32,10 @@ async def start(event):
             vent,
             message=f"اهـلا يا مالكـي انـه انـا {bot_id}, مسـاعدك ! \nمـاذا تريـد ان تفعـل اليـوم ?",
             buttons=[
+                                     [Button.inline("‹ عرض المستخدمين ›", data="users"), Button.inline(
                                          "‹ اوامر البـوت ›", data="gibcmd")],
-                                     [Button.url("‹ المـطـور ›", "https://t.me/FFlXlX"), Button.inline(
-                                      "‹ اوامر الزغـرفة ›", data="rozzag")],
+                                     [Button.url("‹ المطـور ›", "https://t.me/FFlXlX"), Button.inline(
+                                         "‹ اوامر الزغـرفة ›", data="rozzag")],
 
                                  ])
     else:
@@ -47,8 +48,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("تنـصيب دراكـو", data="deploy")],
-                [Button.url("تحتاج مسـاعدة ❓", "https://t.me/DragoSupport")],
+                [custom.Button.inline("تنـصيب دراكو", data="deploy")],
+                [Button.url("تحتاج مسـاعدة", "https://t.me/DragoSupport")],
             ],
         )
 
@@ -60,9 +61,10 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="**لتـنصيب البـوت الخاص بك اتبـع الخطـوات في الاسفـل وحاول واذا لم تستطيع تفضل الى مجموعة المساعدة ليساعدوك**.",
+            message="**هاذا رابط التنصيب اذا تحتاج مساعدة اذهب الى كروب مساعدة**.",
             buttons=[
-                [Button.url("كروب المساعدة ❓", "https://t.me/DragoSupport")],
+                [Button.url("رابط التنصيب", "https://dashboard.heroku.com/new?template=https://github.com/qithoniq/dragon/tree/drago")],
+                [Button.url("كروب المساعدة", "https://t.me/Drago_drSupport")],
             ],
         )
 
@@ -102,8 +104,8 @@ async def starkislub(event):
 
 @tgbot.on(events.NewMessage(pattern="^/alive", func=lambda e: e.sender_id == bot.uid))
 async def starkislub(event):
-    razan = "**𝘋𝘳𝘢𝘎𝘰 𝘜𝘚𝘌𝘙𝘉𝘖𝘛**\n•━═━═━═━═━━═━═━═━═━•‌‌\n**- حالة البوت **  يعمـل بنجـاح\n**- اصدار التليثون  **: 1.23.0\n**- اصدار البايثون **: 3.9.6\n**- يوزرك ** {mention}\n**- CH : @Drago_dr\n•━═━═━═━═━━═━═━═━═━•‌‌\n"
-    await event.reply(razan)
+razan = "**𝘋𝘳𝘢𝘎𝘰 𝘜𝘚𝘌𝘙𝘉𝘖𝘛**\n•━═━═━═━═━━═━═━═━═━•‌‌\n**- حالة البوت **  يعمـل بنجـاح\n**- اصدار التليثون  **: 1.23.0\n**- اصدار البايثون **: 3.9.6\n**- يوزرك ** {mention}\n**- CH : @Drago_dr\n•━═━═━═━═━━═━═━═━═━•‌‌\n"
+await event.reply(razan)
     
     
 
@@ -135,7 +137,7 @@ async def settings(event):
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rozname"))) 
-async def settings(event):  #    قـسـم  الزغرفـة دراكو
+async def settings(event):  #    قـسـم  الزغرفـة دراكـو
     if event.sender_id == bot.uid:
         await event.delete()
         await tgbot.send_message(event.chat_id,
@@ -253,7 +255,7 @@ async def settings(event):  #    قـسـم  البـايو 1
                                          "⫷ التالي ", data="rozpio2")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @Dtago_dr", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @Drago_dr", alert=True)
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rozpio2"))) 
@@ -357,7 +359,7 @@ async def settings(event):#    قـسم  الأشـهر
         await event.answer("انت لا تستطيع استخدام هذا البوت.", alert=True)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rozyear")))  
-async def settings(event):#  قـسم  السنـوات 
+async def settings(event):#    قـسم  السنـوات  :)
     if event.sender_id == bot.uid:
         await event.delete()
         await tgbot.send_message(event.chat_id, 
